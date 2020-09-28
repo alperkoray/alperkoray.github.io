@@ -1,7 +1,9 @@
 <html>
     <script>
+        var deg = 1;
         setInterval(function(){
-            document.getElementById('alper').rotate(1);},100);
+            deg = (deg + 1)%90;
+            document.getElementById('alper').style.transform="rotate("+deg.toString()+"deg)";},100);
     </script>
     <h1>Hello World !</h1>
     <div>
